@@ -13,7 +13,6 @@
 		F84DB2E72842B6FB008D6A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84DB2E52842B6FB008D6A19 /* Main.storyboard */; };
 		F84DB2E92842B6FC008D6A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84DB2E82842B6FC008D6A19 /* Assets.xcassets */; };
 		F84DB2EC2842B6FC008D6A19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84DB2EA2842B6FC008D6A19 /* LaunchScreen.storyboard */; };
-		F84DB2F42842B7A7008D6A19 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F84DB2F32842B7A7008D6A19 /* README.md */; };
 		F84DB2F62842B888008D6A19 /* Pascal's Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DB2F52842B888008D6A19 /* Pascal's Triangle.swift */; };
 		F84DB2F82842B980008D6A19 /* HexagonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DB2F72842B980008D6A19 /* HexagonShape.swift */; };
 /* End PBXBuildFile section */
@@ -150,7 +149,6 @@
 				F84DB2F82842B980008D6A19 /* HexagonShape.swift in Sources */,
 				F84DB2E42842B6FB008D6A19 /* ViewController.swift in Sources */,
 				F84DB2F62842B888008D6A19 /* Pascal's Triangle.swift in Sources */,
-				F84DB2F42842B7A7008D6A19 /* README.md in Sources */,
 				F84DB2E02842B6FB008D6A19 /* AppDelegate.swift in Sources */,
 				F84DB2E22842B6FB008D6A19 /* SceneDelegate.swift in Sources */,
 			);
