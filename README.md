@@ -1,3 +1,3 @@
 # Pascals Triangle
 
-My Attempts to solve some LeetCode Algorithms and problems.
+Implementing Pascal's Triangle algorithm with UI and animations

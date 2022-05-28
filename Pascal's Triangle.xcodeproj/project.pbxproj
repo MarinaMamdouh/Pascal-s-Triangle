@@ -15,6 +15,7 @@
 		F84DB2EC2842B6FC008D6A19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84DB2EA2842B6FC008D6A19 /* LaunchScreen.storyboard */; };
 		F84DB2F42842B7A7008D6A19 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F84DB2F32842B7A7008D6A19 /* README.md */; };
 		F84DB2F62842B888008D6A19 /* Pascal's Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DB2F52842B888008D6A19 /* Pascal's Triangle.swift */; };
+		F84DB2F82842B980008D6A19 /* HexagonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DB2F72842B980008D6A19 /* HexagonShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F84DB2ED2842B6FC008D6A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F84DB2F32842B7A7008D6A19 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F84DB2F52842B888008D6A19 /* Pascal's Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pascal's Triangle.swift"; sourceTree = "<group>"; };
+		F84DB2F72842B980008D6A19 /* HexagonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				F84DB2F52842B888008D6A19 /* Pascal's Triangle.swift */,
+				F84DB2F72842B980008D6A19 /* HexagonShape.swift */,
 				F84DB2DF2842B6FB008D6A19 /* AppDelegate.swift */,
 				F84DB2E12842B6FB008D6A19 /* SceneDelegate.swift */,
 				F84DB2E32842B6FB008D6A19 /* ViewController.swift */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84DB2F82842B980008D6A19 /* HexagonShape.swift in Sources */,
 				F84DB2E42842B6FB008D6A19 /* ViewController.swift in Sources */,
 				F84DB2F62842B888008D6A19 /* Pascal's Triangle.swift in Sources */,
 				F84DB2F42842B7A7008D6A19 /* README.md in Sources */,
