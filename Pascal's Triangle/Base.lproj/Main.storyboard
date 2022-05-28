@@ -17,17 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xxE-Zs-fFd" userLabel="Hexa" customClass="HexagonShapeView" customModule="Pascal_s_Triangle" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="778"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xxE-Zs-fFd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Ih-lL-vRT"/>
-                            <constraint firstItem="xxE-Zs-fFd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8i3-DC-yZ8"/>
+                            <constraint firstItem="xxE-Zs-fFd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8i3-DC-yZ8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xxE-Zs-fFd" secondAttribute="trailing" id="UBX-Mb-hsj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xxE-Zs-fFd" secondAttribute="bottom" id="iaj-WJ-xRd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xxE-Zs-fFd" secondAttribute="bottom" constant="20" id="iaj-WJ-xRd"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,6 +39,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

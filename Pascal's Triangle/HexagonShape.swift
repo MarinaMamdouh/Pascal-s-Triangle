@@ -9,34 +9,38 @@ import Foundation
 import UIKit
 
 class HexagonShapeView:UIView{
-    var sideLength:CGFloat = 100
+    var sideLength:CGFloat = 50
+    var elementText:String = "1"
     var borderWidth:CGFloat = 5
     var borderColor:UIColor = .black
-    
+    private var minHeight:CGFloat {
+        return sideLength/2
+    }
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         drawHexa()
+        drawElement()
     }
-    func drawHexa(){
+
+    private func drawHexa(){
         let layer =  CAShapeLayer()
         let path = UIBezierPath()
-        let minHeight = sideLength / 2
-        let midPoint = CGPoint(x:self.frame.midX, y:self.frame.midY)
+        let midPoint = CGPoint(x:self.bounds.midX, y:self.bounds.midY)
         let firstPoint = CGPoint(x: midPoint.x - sideLength, y: midPoint.y)
         path.move(to: firstPoint)
-        var currentPoint = path.move(from: firstPoint, by: CGPoint(x: 0, y: -minHeight))
+        path.move(distance: CGPoint(x: 0, y: -minHeight))
         
-        currentPoint = path.move(from: currentPoint, by: CGPoint(x: sideLength, y: -minHeight))
+        path.move(distance: CGPoint(x: sideLength, y: -minHeight))
         
-        currentPoint = path.move(from: currentPoint, by: CGPoint(x: sideLength, y: minHeight))
+        path.move(distance: CGPoint(x: sideLength, y: minHeight))
         
-        currentPoint = path.move(from: currentPoint, by: CGPoint(x: 0, y: sideLength))
+        path.move(distance: CGPoint(x: 0, y: sideLength))
         
-        currentPoint = path.move(from: currentPoint, by: CGPoint(x: -sideLength, y: minHeight))
+        path.move(distance: CGPoint(x: -sideLength, y: minHeight))
         
-        _ = path.move(from: currentPoint, by: CGPoint(x: -sideLength, y: -minHeight))
+        path.move(distance: CGPoint(x: -sideLength, y: -minHeight))
         
-        path.close()
+        path.move(distance: CGPoint(x: 0, y: -minHeight))
         let color = borderColor
         color.set()
         path.lineWidth = CGFloat(borderWidth)
@@ -48,13 +52,27 @@ class HexagonShapeView:UIView{
         self.layer.addSublayer(layer)
     }
     
+    private func drawElement(){
+        let label = UILabel()
+        label.text = elementText
+        label.font = .boldSystemFont(ofSize: 24)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.center =  self.center
+
+        self.addSubview(label)
+        label.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0).isActive = true
+        label.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        //label.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        //label.centerXAnchor =  self.centerXAnchor
+        
+    }
+    
     
 }
 
 extension UIBezierPath{
-     func move(from point:CGPoint, by distance:CGPoint) -> CGPoint{
-         let newPoint = CGPoint(x: point.x + distance.x, y: point.y + distance.y)
+     func move(distance:CGPoint){
+         let newPoint = CGPoint(x: currentPoint.x + distance.x, y: currentPoint.y + distance.y)
          self.addLine(to: newPoint)
-         return newPoint
     }
 }
